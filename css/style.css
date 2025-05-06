@@ -170,6 +170,10 @@ header{
   display: inline-block;
   color:#6a260b;
 }
+.link__btn:hover{
+  opacity: 1;
+  color:#6a260b;
+}
 .link__btn img{
   background: url(./img/arw.png) no-repeat center center / cover ;
   position: absolute;
@@ -207,7 +211,12 @@ header{
     top:10%;
     right:-30px;
     z-index: 1;
+    transition: transform 0.3s ease; 
   }
+  .link__btn:hover img{
+    transform: translateX(10px);
+  }
+  
 }
 
  /*--------------------------------
